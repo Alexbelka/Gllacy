@@ -1,0 +1,30 @@
+"use strict";
+
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const plumber = require('gulp-plumber');
+const sourcemaps = require('gulp-sourcemaps');
+const server = require('browser-sync').create();
+const prefixer = require('gulp-autoprefixer');
+const {series} = require('gulp');
+const rename = require('gulp-rename');
+
+function Sass(){
+    return gulp.src(['scss/**/*.scss'],{base:'scss'})
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(sass())
+        .pipe(prefixer())
+        .pipe(sourcemaps.write())
+        .pipe(rename('style.css'))
+        .pipe(gulp.dest('css'))
+        .pipe(server.stream())
+}
+
+function Server(){
+    server.init({server:"./"});
+    gulp.watch('scss/**/*.scss', gulp.series(Sass))
+}
+
+
+exports.start = series(Sass,Server);
