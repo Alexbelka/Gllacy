@@ -10,7 +10,7 @@ const {series} = require('gulp');
 const rename = require('gulp-rename');
 
 function Sass(){
-    return gulp.src(['scss/**/*.scss'],{base:'scss'})
+    return gulp.src(['scss/style.scss'],{base:'scss'})
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass())

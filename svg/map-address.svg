@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="302" height="305" viewBox="0 0 302 305">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-opacity: 0.98;
+      }
+    </style>
+  </defs>
+  <rect id="Подложка" class="cls-1" width="302" height="305" rx="15" ry="15"/>
+</svg>

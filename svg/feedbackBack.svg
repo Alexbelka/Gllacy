@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="477.094" height="442.062" viewBox="0 0 477.094 442.062">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f8f7f4;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Подложка" class="cls-1" d="M373,337.949H830.1a10,10,0,0,1,10,10V770a10,10,0,0,1-10,10H373a10,10,0,0,1-10-10V347.95A10,10,0,0,1,373,337.949Z" transform="translate(-363 -337.938)"/>
+</svg>

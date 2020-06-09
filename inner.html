@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page">
+<header class="main-header">
+    <a href="" class="main-header__logo"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="154" height="64" viewBox="0 0 154 64">
+        <image id="Logo" width="154" height="64" xlink:href="data:img/png;base64,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"/>
+    </svg>
+    </a>
+    <ul class="main-header__menu">
+        <li class="main-header__item main-header__item--trigger"><a class="main-header__item main-header__item--catalog" href="#">Каталог</a>
+        <ul class="main-header__inner-menu">
+            <li><a href="#">Новинки</a></li>
+            <li><a href="#">Сливочное</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+        </ul>
+        </li>
+        <li class="main-header__item"><a class="main-header__item main-header__item--pay"  href="#">Доставка и оплата</a></li>
+        <li class="main-header__item"><a class="main-header__item main-header__item--company"  href="#">О Компании</a></li>
+    </ul>
+    <div class="main-header__wrapper">
+        <ul class="main-header__user-menu">
+            <li><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+                    <image id="Лупа" width="17" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAABBElEQVQ4jbXTP0oEMRSA8cwK4mEEWbeysvcPiHoEOzsPYKWNN7D1BHaLYqGdiyAsLIKVVoJ6AN0t/MlgBuIymVHB12TI++bLy0sS0sAWhhj7inK8xVpoC8ziUnOclVxWhasEvsMulrGHhyTXzwm2E+gow5wkzGodMIrJUUOlBZ4id10HVE3caWodDiL3Np3rhBCqZg2bJCGEqtI5dKYlk/jda5F04zguiuJjusxhLPO+YSszeI7coA7YSDp/nBGcJsxKbqWLBHrEPjZxmFRQxjvmc5Lyxp633Nj0KSxkO4d13MQVqx8G5RbQxeRHokT47RjjXO/Xooz8X0Qvf5JE0SJesfQJLJDKLD2umSEAAAAASUVORK5CYII="/>
+                </svg>
+            </a></li>
+            <li class="main-header__entrance"><a href="#">Вход</a></li>
+            <li class="main-header__empty"><a href="#">2 товара</a></li>
+        </ul>
+        <p class="main-header__schedule">
+            с 10 по 20, ежедневно<br>
+            <span>8 812 450-25-25</span>
+        </p>
+    </div>
+    <nav class="navigation">
+        <ul class="navigation__refs">
+            <li class="navigation__item"><a href="#">Главная</a></li>
+            <li class="navigation__item"><a href="#">Каталог</a></li>
+            <li class="navigation__item"><a href="#">Сливочное</a></li>
+        </ul>
+        <h1 class="navigation__title">Сливочное мороженное</h1>
+        <form class="wrapper">
+            <ul class="first-menu">
+                <li class="first-menu__item">
+                    <label for="sort">Сортировка</label>
+                    <select class="wrapper__select" name="по популярности" id="sort">
+                        <option>По популярности</option>
+                        <option value="клубничное">сначала дорогие</option>
+                        <option value="">сначала недорогие</option>
+                        <option value="">по жирности</option>
+                    </select>
+                </li>
+                <li class="first-menu__item">
+                    <label for="price">Цена 100 руб.-500 руб.</label>
+                    <div class="wrapper-range">
+                    <input class="range" id="price" type="range">
+                    </div>
+                </li>
+                <li class="first-menu__item">
+                   <h4>Жирность:</h4>
+                    <div class="first-menu__wrapper">
+                        <label class="first-menu__label">
+                            <input class="first-menu__input visually-hidden" name="radio" type="radio">
+                            <span class="first-menu__radio"></span>
+                            0%
+                        </label>
+                        <label class="first-menu__label">
+                            <input class="first-menu__input visually-hidden" name="radio"  type="radio">
+                            <span class="first-menu__radio"></span>
+                            до 10%
+                        </label>
+                        <label class="first-menu__label">
+                            <input class="first-menu__input visually-hidden" name="radio"  type="radio">
+                            <span class="first-menu__radio"></span>
+                            до 30%
+                        </label>
+                        <label class="first-menu__label">
+                            <input class="first-menu__input visually-hidden" name="radio"  type="radio">
+                            <span class="first-menu__radio"></span>
+                            выше 30%
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        <ul class="second-menu">
+        <li class="second-menu__item">
+            <h4>Наполнители:</h4>
+            <div class="second-menu__wrapper">
+                <label class="second-menu__label">
+                    <input  class="second-menu__input visually-hidden" type="checkbox">
+                    <span class="second-menu__checkbox"></span>
+                    шоколадные
+                </label>
+                <label class="second-menu__label">
+                    <input class="second-menu__input visually-hidden" type="checkbox">
+                    <span class="second-menu__checkbox"></span>
+                    сахарные присыпки
+                </label>
+                <label class="second-menu__label">
+                    <input class="second-menu__input visually-hidden" type="checkbox">
+                    <span class="second-menu__checkbox"></span>
+                    фрукты
+                </label>
+                <label class="second-menu__label">
+                <input class="second-menu__input visually-hidden" type="checkbox">
+                <span class="second-menu__checkbox"></span>
+                    сиропы
+            </label>
+                <label class="second-menu__label">
+                    <input class="second-menu__input visually-hidden" type="checkbox">
+                    <span class="second-menu__checkbox"></span>
+                    джемы
+                </label>
+            </div>
+        </li>
+        <li class="second-menu__item">
+            <input class="wrapper__submit" type="submit" value="Применить">
+        </li>
+        </ul>
+        </form>
+    </nav>
+</header>
+<main class="inner-main">
+    <ul class="range-menu">
+        <li class="range-menu__item">
+            <div class="range-menu__itemBack">
+                <button class="range-menu__button">Быстрый просмотр</button>
+            </div>
+            <div class="range-menu__wrapper range-menu__wrapper--orange">
+                <!--                <img src="" alt="">-->
+                <span class="range-menu__price">310 р.</span>
+            </div>
+            <div class="range-menu__container">
+                <a class="range-menu__reference">сливочное с апельсиновым джемом
+                    и цитрусовой стружкой
+                </a>
+            </div>
+        </li>
+        <li class="range-menu__item">
+            <div class="range-menu__itemBack">
+                <button class="range-menu__button">Быстрый просмотр</button>
+            </div>
+            <div class="range-menu__wrapper range-menu__wrapper--coffee">
+                <span class="range-menu__price">380 р.</span>
+            </div>
+            <div class="range-menu__container">
+                <a class="range-menu__reference">сливочно-кофейное с кусочками шоколада</a>
+            </div>
+        </li>
+        <li class="range-menu__item">
+            <div class="range-menu__itemBack">
+                <button class="range-menu__button">Быстрый просмотр</button>
+            </div>
+            <div class="range-menu__wrapper range-menu__wrapper--strawberry">
+                <span class="range-menu__price">355 р.</span>
+            </div>
+            <div class="range-menu__container">
+                <a class="range-menu__reference">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            </div>
+        </li>
+        <li class="range-menu__item">
+            <div class="range-menu__itemBack">
+                <button class="range-menu__button">Быстрый просмотр</button>
+            </div>
+            <div class="range-menu__wrapper range-menu__wrapper--caramel">
+                <span class="range-menu__price">415 р.</span>
+            </div>
+            <div class="range-menu__container">
+                <a class="range-menu__reference">сливочное крем брюле
+                    с карамельной подливкой</a>
+            </div>
+        </li>
+        <li class="range-menu__item">
+            <div class="range-menu__itemBack">
+                <button class="range-menu__button">Быстрый просмотр</button>
+            </div>
+            <div class="range-menu__wrapper range-menu__wrapper--jam">
+                <!--                <img src="" alt="">-->
+                <span class="range-menu__price">325 р.</span>
+            </div>
+            <div class="range-menu__container">
+                <a class="range-menu__reference">сливочное с апельсиновым джемом
+                    и цитрусовой стружкой
+                </a>
+            </div>
+        </li>
+        <li class="range-menu__item">
+            <div class="range-menu__itemBack">
+                <button class="range-menu__button">Быстрый просмотр</button>
+            </div>
+            <div class="range-menu__wrapper range-menu__wrapper--brusnika">
+                <span class="range-menu__price">410 р.</span>
+            </div>
+            <div class="range-menu__container">
+                <a class="range-menu__reference">сливочно-кофейное с кусочками шоколада</a>
+            </div>
+        </li>
+        <li class="range-menu__item">
+            <div class="range-menu__itemBack">
+                <button class="range-menu__button">Быстрый просмотр</button>
+            </div>
+            <div class="range-menu__wrapper range-menu__wrapper--lime">
+                <span class="range-menu__price">355 р.</span>
+            </div>
+            <div class="range-menu__container">
+                <a class="range-menu__reference">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            </div>
+        </li>
+        <li class="range-menu__item">
+            <div class="range-menu__itemBack">
+                <button class="range-menu__button">Быстрый просмотр</button>
+            </div>
+            <div class="range-menu__wrapper range-menu__wrapper--chocolate-pieces">
+                <span class="range-menu__price">320 р.</span>
+            </div>
+            <div class="range-menu__container">
+                <a class="range-menu__reference">сливочное крем брюле
+                    с карамельной подливкой</a>
+            </div>
+        </li>
+        <li class="range-menu__item">
+            <div class="range-menu__itemBack">
+                <button class="range-menu__button">Быстрый просмотр</button>
+            </div>
+            <div class="range-menu__wrapper range-menu__wrapper--chocolate-vanille">
+                <!--                <img src="" alt="">-->
+                <span class="range-menu__price">440 р.</span>
+            </div>
+            <div class="range-menu__container">
+                <a class="range-menu__reference">сливочное с апельсиновым джемом
+                    и цитрусовой стружкой
+                </a>
+            </div>
+        </li>
+        <li class="range-menu__item">
+            <div class="range-menu__itemBack">
+                <button class="range-menu__button">Быстрый просмотр</button>
+            </div>
+            <div class="range-menu__wrapper range-menu__wrapper--Mentol">
+                <span class="range-menu__price">435 р.</span>
+            </div>
+            <div class="range-menu__container">
+                <a class="range-menu__reference">сливочно-кофейное с кусочками шоколада</a>
+            </div>
+        </li>
+        <li class="range-menu__item">
+            <div class="range-menu__itemBack">
+                <button class="range-menu__button">Быстрый просмотр</button>
+            </div>
+            <div class="range-menu__wrapper range-menu__wrapper--blackChoc">
+                <span class="range-menu__price">355 р.</span>
+            </div>
+            <div class="range-menu__container">
+                <a class="range-menu__reference">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            </div>
+        </li>
+        <li class="range-menu__item">
+            <div class="range-menu__itemBack">
+                <button class="range-menu__button">Быстрый просмотр</button>
+            </div>
+            <div class="range-menu__wrapper range-menu__wrapper--mojo">
+                <span class="range-menu__price">420 р.</span>
+            </div>
+            <div class="range-menu__container">
+                <a class="range-menu__reference">сливочное крем брюле
+                    с карамельной подливкой</a>
+            </div>
+        </li>
+    </ul>
+<!--    <ul class="pages-references">-->
+<!--        <li class="pages-references__element"><a href="#">1</a></li>-->
+<!--        <li class="pages-references__element"><a href="#">2</a></li>-->
+<!--        <li class="pages-references__element"><a href="#">3</a></li>-->
+<!--        <li class="pages-references__element"><a href="#">4</a></li>-->
+<!--        <li class="pages-references__element"><a href="#">5</a></li>-->
+<!--    </ul>-->
+    <ul class="pageNumbers">
+        <li class="pageNumbers__elem"><a href="#">1</a></li>
+        <li class="pageNumbers__elem"><a href="#">2</a></li>
+        <li class="pageNumbers__elem"><a href="#">3</a></li>
+        <li class="pageNumbers__elem"><a href="#">4</a></li>
+        <li class="pageNumbers__elem"><a href="#">5</a></li>
+    </ul>
+</main>
+<footer class="main-footer">
+    <ul class="networks">
+        <li class="networks__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+                <image id="Твитер" width="38" height="38" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAEoElEQVRYhb2Y22tdRRTGf2vnZmMTbWzipW2oVQraVglWpSqCiqCICgoqPgjig6/6UnwXVHzTf0B8UBDFBwvipVbwQmvwgqQVNVZjtRdMG2usrWk0S9bh2zDZ7r3PPmn0g0Mme9bMfDOzrmPuzhKQARcC64DVwEqgV9P8CZwAfgEOANNAx4t0dyh/EXAVcDmwouGY34G9wKfAsaYLNT2xOJ1bgQ1NJy5BLLQP2Akc74iYmS3qdPc40VuAa3V9Ofp0hYPAKv3iW0wwp4V/02kd1rcc88D7wG4z88J67Ym5eyz6gK4vxznAGuCSDvQmNvejfjPJ92+B18zsdGNi7j4EPAScq64eYD1wGbDQkFARMccPus559R0EXjKzk22J6aQe1vUgixvTaZ0pTFYbhvCr5voZeNHM5lMuqd4EqS7gvoTUAHD9MpFC1x+6eAMwrG9rgbuLglnh/5skGDhbpHqWiVSR4LbkADa7+1gVsREJIzJjS/BznSB09Zpk4+GO+suIhVvoUns0Ufz/EhEtrtD8/briRcTitDaqPSDP/n/AZe1DWmtrHlFyYmOyGOSnqnxUE9/1B/AccBdwG7AdmFLfocRV5JhLDiVOcBOJDm3S37CYSysWjID8LPCMXEgZwh89YmbfJX273D3cw/lAONNXS8at1dpBcnO4k0xmOyiBOr2aMrM9crxfV8i8UCDVgpnNmtmkrmxvybjTutKcZE+mq8tR569aA83sgMg9JU+e4r2qwe4e13R7ouwpFpJDiVu8oFvBOMd5NcRG3X2LmU2YWUz0evzcPQhv0Tw/1YyPA7inpn8gaa/uLujLqpIBOb6SI9wnYi2Y2VSi3HUYbtM/mLRXZlK6HH3lY1qIo34lJdUh1rcR703afUHs74bzR/rzmLsXw1hTbO1AdiGTReSYq5fnQeAJd69yF6WQ4l/dRiz1b3NZIc1tm/ICb5vZiU6IAXcWlLsMsymPIHY0+TDTZnBgu7uPNGXk7uGCHm0gmm52OpNH95LOKkRa/Ya7P+nu/XWCusKnk1hYha7kUE4FsW6ROaJKaFrxs8zywpnOqLgI17EzT4krSI2I1JUNNtubuJz9MTyPlRMiFsr/fYVpR+L4MvBunY65+zplpPc3rD2tUElNkOT8cSWPK2kLJ3tjjRuJ04x4OKlqOxOBYWUJayrGVaFfteaMjO/5WCM/sZMqELapSJisKW4zEdhYv14jZIWy7qNcjVJn+YFyKUSsUn+WEUHic013JGkvIhbW8Kba4ew+O4Masgki/H2stUJtdqTrLQovZhbF6Lj+jRL/k6W81DQk9WFSW4aFH0wFyuLeW8A3ah/Trk4tE6FMG90lwwmMm9nuomDVE0EYxb16EkDWGgXKhpKcvSlWSNG/SObYoxDndPCoEru7WUVv3jEkax3V5O2uuUubOqR0PLe+v4B3zGw8FW5ELBGOEHRHIaz0idyg0vFBeW9TtjKriHJcHj3NWoLkDjM7XLJWObEa9Cifuq5BllCFo/JTXzYxqE7fYEP3oryLHP/itKSvQFh2xL6ojCLWNl5sqY/DrbG63vxx+CwtnL8ohkU3ye/+DeAf+LtuAMhRunIAAAAASUVORK5CYII="/>
+            </svg>
+        </li>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+            <image id="_" data-name="&apos;=]" width="38" height="38" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAEfklEQVRYhb2Y349dUxTHP+vOnV4zOkNHK0pV/dYqySBEeUFExAOpRIQQIuIP8OJBI3jx4lW8euibNJEp8SskfkTb0Km0FfW70mq1Sn+MjunoLFnNd7Pvce6dc+4M3+Tk7nvO3mt/91p7rx/b3J0e0ACWAucDi4GFwAKJ+QOYAA4APwIHgdqTNGv2Pxe4FlgFDFQccwzYAXwKHKo6UVWNhXZuBy6qKrgEMdFO4F3gcC1iZtb20d1Do7cBN8h8CS2ZcBhYpCfehYApTXxE2tqndwnTwPvAJ2bmhflmJ+buMen9Ml/CGcB5wMU19k0sbreeX7P3XwGvmtmJysTcfQR4GDhTn/qBFcBKYKYioSJCxvcy57S+7QXWm9nxWYlJU4/KPOjEjUpbc4Xp1MZB+E2y9gCvmNl0ziXfN0GqD7gvIzUE3DRPpJD5Yy/eDCzRu2XA3cWOjcL/W9QxcLpI9c8TqSLBGzMFrHb30U7EzlZnRGa0Bz9XB7FXr88WHu5osIxYuIU+tZdnG/+/RESLqyV/UCY+haSR0NZlag/Js5e5gwgxzwPf1CQbsp8puB40xwqd1nAl1wEfApPpVN6RmfEK4JIOEzxiZjt60aC7h9le6vD5F2CT2hvj1CaNXanfVhdSgd0VSayJRejvNjMLQru6DFmmuSNCrE7Elii0MI/76izgGrWP6bebYz4hk+4Syf6GQkzCfPmrupjJlBLKOqepYJyvtDbkg+7RBBvCfMCzkrO/oryhrL24qZCTsKh8TDvcPRLEA2Y25e5hspcz13Mn8JiZjbn7YI3tMZy1Fza06RJa5WP+hXWZptcW/GEzCzGxTZ6sKHNB1m6FwJMVBxZRJe3pVfZMQyciYap7/zYkF7OhcOL+BF5T+6oa8qaz9lSjkObOmvJmeMjdG2a2FXgCeB0YAx43s53Kfh+oIe9ozqMpr5sQYWGkoqAIW0+5+wtmNg6Mpw8itU6Z7p6K8iay9sGm4p8riZvoMrAMsfFXuvt64AvJCPM9CFxaQ05flnZPJmIT8jVLVQM2KqTPxfCyVk9CePutan+r32LulyNO5A9Zf0+xcruIxeb/TuGhDBdEjWhmL9bQRsLlHd5boZLanq9iW6FA6CuXwXPh5d19qOYTRfLTHWQOaBugw/c1hWIkT31WzbG4rYpQzM/AZvXfqEKlze4fAL+rHayP/w/EZrK9uD9rtxGL0/CG2mHWz+ZQQ1ZBhL+PNddJ+cC/52s7KeEYgS36e0Qq7uk6aBa0lEKn2vIdM9ubDyk7wm9m7uCQVjU5T4QaWuh7uqYKbDazTcWOna4Iwo3cqysBVGKlAzFdFFIRA7q/GM9kBKG30uVK1UuVWN2tKnrThxGd1uUSPpuZ+7Son4AvM+8egf5tM9uSd65ELOsc8e6uQgxtidyw0vFheW9TtnJUEeWwPHqetQTJMTPbVzJXObEu6FfNt6aQAtdBJAsfAZ9XOVB172Bj70V5F4H6wryk74DQXBTHUYtGUVt5sl4vh0+NlXnT5fBpmjjMFq4mNFQnv/sHwF/06Ibg0me3MwAAAABJRU5ErkJggg=="/>
+        </svg>
+        <li class="networks__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+                <image id="ФБ" width="38" height="38" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAD8klEQVRYhb2Yy4tcRRTGf6d7esYkMxMziRI1Ro0iaqIwKIpG0CiuFFwIohvBv8GtS8GVf4QLF4KugqJRFHxgEuILH5jER3zEBPPwkUnGmTFTcuJX4fS1J13V6ZkPLl23uu45X51HVZ2ylBIDoAVcAVwNbADGgVGJ+RuYAX4DfgKOAdVKRirHXwncDtwCrCr85hTwJbAPOFGqqNRibp2HgC2lgnvAFX0FvA38UUXMzLr+TCm5RR8E7pL7MsbkwklgnR7vcwFzUvynrHVEfRkLwLvAR2aWGvr6E0spudIn5L6MtcBVwPUVceOT+1HPydB/AHjFzOaLiaWUpoCngEv1Vwe4DrgJWCwk1ITL+EHuXNB/h4GXzOxMX2Ky1NNyD8q4aVnrYmHKWk+E3yXrF+BFM1uIXGLcOKk28HggNQFsHxIp5H6PxXuBy9S3CXi0ObDVeN+hgY41ItUZEqkmwbuDAballKaXIna5BiMy05Xr3Kua+Y7wnL7AeI/VO8PEfTla3YuYLwttta8JgV+C18zseTM7bGan8lOQub5b3Kb2arm4i5hb60a1Pa5uriDleLlyfIYTvxaY0vsdeUfJrppWxqB1qnZv+/m8ppSeCf1jBd/OySi7ZcGtnrWZ2NYg6IZKUk08OcA3m6TbSW5zYi2l7aQG1MTVMDEvl2aSnRG5LqNmvTodXB5dPxPa44WyFoNRnNPGEW3GGesriD2izOuCmd2f31NK+yrkTYT2hlZjVut6fLBSmAx6xluNzCnJouXCaJA75q48O6Ci51JK/6j9rJnN8p/7XhgC8cURZUTGXI/9cylsD/1x67pvQDILoT3Xahxz+x55lxF/RR5O7HjoOLliNP6PuMwca6nEyuvQTImEZUA7GGU2E3MyRzPTihgbJjwjD0ned26oTOIL/Xrwf7/CpKxRSZ3jkol91igQ2r1lLAv8mPO1BHvyHYzEzqhAQEXCwUoG4ymlCX8qv2s1yroPchUW15/3dJpcI2Ib41G3D3YOaEon8YnaR0O7K9A9G15X29368UXUkCXw7e9D6TqryZ3X15WBZubF6F69eom/Z5CbmkJS74fa8i2vF+KAXkvDG8B+tU9oVrNDItTSRN/RNZVjj5ntbg5c6orAY++xUJR0dPW0pbGn1WCVAv3TIMMJvZkvV0ovVXx2D2izzn9MidxmCe/n5rYm9SvwTcg+P5XsMrO9cXARsTDYb3YeDiUWipHNOtyt1e+oJjCvDXlG69KhxjWUk9xpZkd66OpN7ALoqOa7p3EErsFxrVOflyRU7R2sx56Xd7fqWqrfOueW+1ZXnX4FVaxs0Mvhc9/Kvfly+BIpdrf5UuMWGux8B/wLLa4rADV0HFEAAAAASUVORK5CYII="/>
+            </svg>
+        </li>
+        <li class="networks__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+                <image id="ВК" width="38" height="38" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAEVUlEQVRYhb2Yy49URRTGf6enu8cZGZARjA+cKKgJApqORiO6EA3R6MKFxsjGaNy6MXHjP6F/gYmSGDfuSIyvSCKIQBQ1agTHBxoRwgAqtOBM4xxz9Luk5uZOd/V18Etuuvreenx1Tp1XmbtTAw3gKuBaYBWwDGhrmj+BLnAc+AmYAYZepDlk/6uB24CbgbHMMWeAL4GPgZO5C+VKLKSzFVibO3EFYqGvgPeA34YiZmYLPrp7SPR+4E6pr8CoVLgcWKkn3sUEs1r4d0nrqN4V6AE7gY/MzEvrDSbm7rHoE1JfgRXANcC6Ic5NbO5HPaeS998Ab5jZXDYxd58EngQu06cWcB2wHpjPJFRGzPGD1NnTtyPAa2Z2diAxSeppqQdZXEfS+q8wWW0Ywq+a62fgVTPrpVzScxOkRoDHE1ITwN1LRAqpP87iPcBqvVsDPFLu2Cj936KOgUtFqrVEpMoE70oEsNHdO4sRu0KdEZlODT83DOKs3pFsPNzReBWxcAsjak8lB/9iIqLFLZp/XCpeQCykdZPaE/Ls/wdc1j6ptW4vIkqhqo4sBvmpHB+1xczOpC/kkMdkybHgo8C9A+aZlVD2SoIbwmoLiW3Qb1jMDXUlZWbng6yZHTWz8OzPA9szhq7R2oGNSJWrFVqoe67cfZO7P+Xu29x9s7unse2VjCnmJOGCZKsp1RWo6682Ac8m/58DdqndlQWWXVOK+UQowenKhoJxgctrEuuHzgBSBSaS9qqmDmqBlYsO64+DwOsKN9Hezb8qjnTphcw5liftZc3k0KF2r2JQX5jZAeBARZ+tiiA5aCd9RkPEf9WSUQJ3b7v7hJ4LC5jZdsXer4eccr4hiygw27//onhMyV88e9z9ZXcfF7nwdS9lzJFqarZRSnMHpryZuLXwR8LBjGGnUx5B7ETy4lTFgDoIIzicjMtxQ92kPdNUieUKSd0+A/vhE+BFtYPUHjM7nnx/cMD4kUQo5wpiQeaYKqEZ+Zyh0mczOwQcqvrm7lHIPDNginYi4e9iWBHEvxCxOPzfJ+FhaOjQh4u4EXgAeChJECr3VaqkgsuF7OIzZa8tFQjrMtzIzppVfBmRjXyod2F80ySh4qwKBFQkTC/FihlolMq63cUxSmPYB8Afak+L7MXGfBIxjqXRIyUW1vCm2j1ZWt0aMgejUmFPx2ZHut6CqG9mUYzu198o8ffVuanJJLUrqS3fNbMjaYeqdOStxPRPalfnlohQQxt9X9dUgX1mtrfccbErgqby9fX61FKBsrZO9iGM6aB/mswRhN4uLldyL1Vid/ep6C0+TIrclCYfpOYRbeoXxcvC+s4D75jZ/rRzFrGkc/i0h5MSC52RKSV3K/Tb1gbmFJC78kuHS1lLkNwRBUvFWtXE+qClmm9zKQUeBifkpz7PMahh72Dj7EV5F8XH9WlJvwhCct/qqjOuoLIXq3s5/M9Yqbe4HL5EC4fawtWEhOrld8DfTepaI4pqsfkAAAAASUVORK5CYII="/>
+            </svg>
+        </li>
+    </ul>
+    <div class="info-references">
+        <ul>
+            <li><a href="#">Для поставщиков</a></li>
+            <li><a href="#">Наши документы</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">О производстве</a></li>
+            <li><a href="#">Экологические сандарты</a></li>
+        </ul>
+    </div>
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="108" height="39" viewBox="0 0 108 39">
+            <image id="logo-htmlacademy-small" width="108" height="39" xlink:href="data:img/png;base64,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"/>
+        </svg>
+        <span class="main-footer__developer">Сделано в HTML Academy 2017</span>
+    </div>
+</footer>
+<section class="basket-goods">
+    <button class="basket-goods__buttonClose"></button>
+    <ul class="basket-goods__list">
+        <li class="basket-goods__item">
+            <img src="img/smallCaramel.png" alt="">
+            <p>Пломбир с апельсиновым джемом</p>
+            <p>1,5кг х 200 руб. </p>
+            <p>300 руб.</p>
+            <button class="basket-goods__close"></button>
+        </li>
+        <li class="basket-goods__item">
+            <img src="img/smallStrawberry.png" alt="">
+            <p>Пломбир с апельсиновым джемом</p>
+            <p>1,5кг х 200 руб. </p>
+            <p>300 руб.</p>
+            <button class="basket-goods__close"></button>
+        </li>
+    </ul>
+    <p class="basket-goods__totalPrice" >Итого:750 руб.</p>
+    <button class="basket-goods__btn">Оформить заказ</button>
+</section>
+<script src="js/basket.js"></script>
+</body>
+</html>

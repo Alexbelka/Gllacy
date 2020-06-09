@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="145.906" height="38.032" viewBox="0 0 145.906 38.032">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-opacity: 0.19;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Подложка" class="cls-1" d="M760.94,281.918H869.075a18.111,18.111,0,0,1,17.881,18.147,17.881,17.881,0,0,1-17.881,17.88H760.94a17.881,17.881,0,0,1-17.881-17.88A18.111,18.111,0,0,1,760.94,281.918Z" transform="translate(-742.063 -280.906)"/>
+</svg>

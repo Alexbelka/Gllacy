@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.25" height="32.25" viewBox="0 0 32.25 32.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        opacity: 0.2;
+      }
+    </style>
+  </defs>
+  <path id="Подложка" class="cls-1" d="M927.625,22.75A16.125,16.125,0,1,1,911.5,38.875,16.125,16.125,0,0,1,927.625,22.75Z" transform="translate(-911.5 -22.75)"/>
+</svg>

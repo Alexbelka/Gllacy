@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="20" viewBox="0 0 24 20">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.8;
+      }
+    </style>
+  </defs>
+  <image id="checkbox-on" class="cls-1" width="24" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAYAAACXtf2DAAABgElEQVQ4ja2VPUsDQRCGn8QEBfMD0llZiBBE7AQtbYWUFgFrBQsRP0BBFFQQFb+6YK8opEltShW0EGtLK1HQQgmOjMzJuuRyuZwvHNzO3j7vzu7ObUpE8sAqMEgyPQCTQN2lZIA1YAB4BJ7btPgENoEvYBGoAPc/PSJyIyIVEdFsSPBkRWTdeJciUlBW2mbwpl4JFihrGYxZuxs4BvLpiIFx4CNefA94yiSEdxl82ItvAGf6EpZBChhtAb7rwcWFhxkofB7YBqYj4ENOTE/QsgtvZKDtJaBo7RKwYKaBcsBBA/gKUAU6mxloiu9erGgZpQx+aHUTqG4zr9pGT7iD/U1Wgx0bVPJMOoBeoN+DzwE1oABsAeVmBoH2nSUKNO5948JVPY14zepATY5C+j6AWQceqqg6KNsGTnnwGeA6Ch6VQaATOzWx4bSQgWvyan/c21bhcQxUF3HAgYIlynnF1I6UodK74U8Gd1Y4pwkuHJ1on71fuR3/eWW+2LE+/40A3/Fbl3OIYmBNAAAAAElFTkSuQmCC"/>
+</svg>
