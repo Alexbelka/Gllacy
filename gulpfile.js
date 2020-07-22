@@ -22,9 +22,8 @@ function Sass(){
 }
 
 function Server(){
-    server.init({server:"./"});
+    server.init({server:"./",browser:'chrome'});
     gulp.watch('scss/**/*.scss', gulp.series(Sass))
 }
-
 
 exports.start = series(Sass,Server);
