@@ -16,4 +16,7 @@
     btnThird.addEventListener('change', function () {
         page.style.backgroundImage = 'url(../img/backThird.png)';
     });
+
 }());
+
+

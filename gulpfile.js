@@ -26,4 +26,6 @@ function Server(){
     gulp.watch('scss/**/*.scss', gulp.series(Sass))
 }
 
+
+exports.build = series(Sass);
 exports.start = series(Sass,Server);
